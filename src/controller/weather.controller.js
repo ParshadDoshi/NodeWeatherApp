@@ -18,3 +18,6 @@ module.exports.WeatherReport = async (req, res) => {
     }
 
 }
+module.exports.sendHomePage = async (req, res) => {
+    res.sendFile(process.cwd() + '/src/view/home.html')
+}

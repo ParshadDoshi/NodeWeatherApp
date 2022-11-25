@@ -1,0 +1,17 @@
+<a href="/addtrainee">Add Trainee</a>
+<table border="1">
+    <% for(var i=0; i < Trainee.length; i++) { %>
+
+
+        <tr>
+            <td>
+                <a href='/updateTrainee/<%= Trainee[i].id%>'>
+                    <%= Trainee[i].id %>
+                </a>
+            </td>
+            <td>
+                <%= Trainee[i].name %>
+            </td>
+        </tr>
+        <% } %>
+</table>
